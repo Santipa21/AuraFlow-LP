@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+@theme{
+    /*Colors*/
+    --color-indigo:#4F46E5;
+    --color-blue:#3B82F6;
+    --color-coral:#F43F5E;
+    --color-surface:#FFFFFF;
+    --color-dark-surface:#0F172A;
+    --color-secondary:#475569;
+    --color-border-gray-neutral:#E2E8F0;
+    --color-background:#F8FAFC;
+
+    /*Typography*/
+    --font-syne: 'Syne', sans-serif;
+    --font-geist: 'Geist', sans-serif;
+
+    --text-h1: 48px;
+    --text-h1--font-weight: 700;
+    --text-h2: 36px;
+    --text-h2--font-weight: 700;
+    --text-h3: 24px;
+    --text-h3--font-weight: 600;
+    --text-body: 16px;
+    --text-body--font-weight: 400;
+    --text-small: 14px;
+    --text-small--font-weight: 400;
+    --text-button: 16px;
+    --text-button--font-weight: 600;
+
+}
+
+@layer components {
+    .button-primary {
+        @apply bg-indigo text-surface text-button rounded-lg px-6 py-3 
+               font-geist cursor-pointer;
+    }
+    .button-secondary {
+        @apply text-indigo text-button rounded-lg px-6 py-3 
+               font-geist border border-indigo cursor-pointer;
+    }
+}
