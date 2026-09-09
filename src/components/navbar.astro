@@ -1,26 +1,60 @@
-<nav class="flex justify-between px-6 md:px-12 xl:px-32 py-5 items-center">
+<nav class="relative flex justify-between px-6 md:px-12 xl:px-32 py-5 items-center">
   <div class="flex items-center gap-2">
     <span class="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6 bg-indigo block rounded-full"></span>
-    <h3 class="text-button md:text-lg xl:text-xl text-dark-surface font-syne">AuraFlow</h3>
+    <h2 class="text-button md:text-lg xl:text-xl text-dark-surface font-syne">AuraFlow</h2>
   </div>
   <ul class="hidden xl:flex gap-8 font-geist text-secondary">
-    <li><a href="">Platform</a></li>
-    <li><a href="">Features</a></li>
-    <li><a href="">Pricing</a></li>
-    <li><a href="">Docs</a></li>
+    <li><a href="#hero">Platform</a></li>
+    <li><a href="#panel">Features</a></li>
+    <li><a href="#newsletter">Pricing</a></li>
+    <li><a href="#newsletter">Docs</a></li>
   </ul>
-  <a class="hidden md:block button-primary" href="#">Get Started Free</a>
-  <svg class="md:hidden cursor-pointer"
-    width="14"
-    height="13"
-    viewBox="0 0 14 13"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
+  <a class="hidden md:block button-primary" href="#newsletter">Get Started Free</a>
+  <button
+    type="button"
+    class="md:hidden flex items-center justify-center p-2 text-dark-surface"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
   >
-    <path
-      d="M1 1H12.9988M1 6.2506H12.9988M1 11.5012H12.9988"
-      stroke="#0F172A"
-      stroke-width="2"
-      stroke-linecap="round"></path>
-  </svg>
+    <svg
+      width="14"
+      height="13"
+      viewBox="0 0 14 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M1 1H12.9988M1 6.2506H12.9988M1 11.5012H12.9988"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      ></path>
+    </svg>
+  </button>
+  <div id="mobile-menu" class="absolute left-0 right-0 top-full bg-surface border-b border-border-gray-neutral px-6 pb-4 pt-2 shadow-md md:hidden" hidden>
+    <ul class="flex flex-col gap-3 font-geist text-secondary">
+      <li><a href="#hero">Platform</a></li>
+      <li><a href="#panel">Features</a></li>
+      <li><a href="#newsletter">Pricing</a></li>
+      <li><a href="#newsletter">Docs</a></li>
+    </ul>
+  </div>
 </nav>
+
+<script>
+  const button = document.querySelector('[aria-controls="mobile-menu"]');
+  const menu = document.querySelector('#mobile-menu');
+
+  button?.addEventListener('click', () => {
+    const isOpen = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!isOpen));
+
+    if (isOpen) {
+      menu?.setAttribute('hidden', 'hidden');
+    } else {
+      menu?.removeAttribute('hidden');
+    }
+  });
+</script>
