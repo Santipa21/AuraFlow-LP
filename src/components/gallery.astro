@@ -1,3 +1,12 @@
+---
+import gallery1 from '../assets/gallery-1.jpeg';
+import gallery2 from '../assets/gallery-2.jpeg';
+import gallery3 from '../assets/gallery-3.jpg';
+import gallery4 from '../assets/gallery-4.jpg';
+import gallery5 from '../assets/gallery-5.jpg';
+import gallery6 from '../assets/gallery-6.jpg';
+---
+
 <section class="bg-gray-100 py-12 px-6 gap-6 flex flex-col items-center
 md:py-16 md:px-12 md:gap-8
 xl:py-20 xl:px-30 xl:gap-12">
@@ -13,7 +22,7 @@ xl:py-20 xl:px-30 xl:gap-12">
     xl:order-1">
       <img class="rounded-lg max-h-40 w-dvw 
       md:max-h-50
-      xl:max-h-80 object-cover" src="/assets/gallery-1.jpeg" alt="Trulli" />
+      xl:max-h-80 object-cover" src={gallery1.src} alt="Platform Map" />
       <figcaption class="absolute left-3 bottom-3 py-1 px-2 rounded-sm text-surface font-geist font-semibold text-xs bg-dark-surface/75">Platform Map</figcaption>
     </figure>
     <figure class="relative
@@ -21,7 +30,7 @@ xl:py-20 xl:px-30 xl:gap-12">
     xl:order-4">
       <img class="rounded-lg max-h-40 w-dvw 
       md:max-h-50
-      xl:max-h-105 object-cover" src="/assets/gallery-2.jpeg" alt="Trulli" />
+      xl:max-h-105 object-cover" src={gallery2.src} alt="Edge Node Alpha" />
       <figcaption class="absolute left-3 bottom-3 py-1 px-2 rounded-sm text-surface font-geist font-semibold text-xs bg-dark-surface/75">Edge Node Alpha</figcaption>
     </figure>
     <figure class="relative
@@ -29,7 +38,7 @@ xl:py-20 xl:px-30 xl:gap-12">
     xl:order-2 xl:max-h-65">
       <img class="rounded-lg max-h-40 w-dvw 
       md:max-h-50
-      xl:max-h-65 object-cover" src="/assets/gallery-3.jpg" alt="Trulli" />
+      xl:max-h-65 object-cover" src={gallery3.src} alt="Realtime Telemetry" />
       <figcaption class="absolute left-3 bottom-3 py-1 px-2 rounded-sm text-surface font-geist font-semibold text-xs bg-dark-surface/75">Realtime Telemetry</figcaption>
     </figure>
     <figure class="relative
@@ -37,7 +46,7 @@ xl:py-20 xl:px-30 xl:gap-12">
     xl:order-5 xl:max-h-95">
       <img class="rounded-lg max-h-40 w-dvw 
       md:max-h-50
-      xl:max-h-95 object-cover" src="/assets/gallery-4.jpg" alt="Trulli" />
+      xl:max-h-95 object-cover" src={gallery4.src} alt="HQ Operations" />
       <figcaption class="absolute left-3 bottom-3 py-1 px-2 rounded-sm text-surface font-geist font-semibold text-xs bg-dark-surface/75">HQ Operations</figcaption>
     </figure>
       <figure class="hidden relative
@@ -45,7 +54,7 @@ xl:py-20 xl:px-30 xl:gap-12">
       xl:order-3">
         <img class="rounded-lg
         md:max-h-50 w-dvw
-        xl:max-h-80 object-cover" src="/assets/gallery-5.jpg" alt="Trulli" />
+        xl:max-h-80 object-cover" src={gallery5.src} alt="Developer Station" />
         <figcaption class="absolute left-3 bottom-3 py-1 px-2 rounded-sm text-surface font-geist font-semibold text-xs bg-dark-surface/75">Developer Station</figcaption>
       </figure>
       <figure class="hidden relative
@@ -53,7 +62,7 @@ xl:py-20 xl:px-30 xl:gap-12">
       xl:order-6 xl:max-h-95">
         <img class="rounded-lg
         md:min-h-50 w-dvw
-          xl:min-h-96 object-cover" src="/assets/gallery-6.jpg" alt="Trulli" />
+          xl:min-h-96 object-cover" src={gallery6.src} alt="Telemetry Stream" />
         <figcaption class="absolute left-3 bottom-3 py-1 px-2 rounded-sm text-surface font-geist font-semibold text-xs bg-dark-surface/75">Telemetry Stream</figcaption>
       </figure>
   </div>
