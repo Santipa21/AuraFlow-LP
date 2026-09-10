@@ -2,7 +2,7 @@
 md:gap-8 md:px-12 md:py-16
 xl:gap-12 xl:px-30 xl:py-20">
     <div class="flex flex-col gap-3 items-center">
-        <h3 class="font-syne font-bold text-4xl text-dark-surface">Platform FAQ</h3>
+        <h2 class="font-syne font-bold text-4xl text-dark-surface">Platform FAQ</h2>
         <p class="font-geist text-base text-secondary">Know the architecture.</p>
     </div>
     <div class="flex flex-col gap-3
@@ -11,60 +11,60 @@ xl:gap-12 xl:px-30 xl:py-20">
         <article class="bg-gray-100 flex flex-col gap-2 p-3 rounded-lg
         md:p-4
         xl:gap-3 xl:p-5 ">
-            <div class="flex justify-between bg-transparent" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-                <p class="font-syne font-bold text-sm text-dark-surface
+            <button class="flex justify-between bg-transparent" id="accordion-collapse-heading-1" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                <p class="text-left font-syne font-bold text-sm text-dark-surface
                 md:text-base">How does the 200ms cold start time scale globally?</p>
-                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
 
-            </div>
+            </button>
             <p class="font-geist text-xs text-secondary hidden
             md:text-sm" id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">AuraFlow utilizes micro-runtime snap-starts pre-warmed on edge pops. Workloads launch instantly without waiting for node boot-ups, ensuring flat performance curve regardless of traffic volume.</p>
         </article>
         <article class="bg-gray-100 flex flex-col gap-2 p-3 rounded-lg
         md:p-4
         xl:gap-3 xl:p-5">
-            <div class="flex justify-between bg-transparent" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                <p class="font-syne font-bold text-sm text-dark-surface
+            <button class="flex justify-between bg-transparent" id="accordion-collapse-heading-2" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                <p class="text-left font-syne font-bold text-sm text-dark-surface
                 md:text-base">Can we run custom WebAssembly modules on the edge?</p>
-                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
 
-            </div>
+            </button>
             <p class="font-geist text-xs text-secondary hidden
             md:text-sm" id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-heading-2">AuraFlow utilizes micro-runtime snap-starts pre-warmed on edge pops. Workloads launch instantly without waiting for node boot-ups, ensuring flat performance curve regardless of traffic volume.</p>
         </article>
         <article class="bg-gray-100 flex flex-col gap-2 p-3 rounded-lg
         md:p-4
         xl:gap-3 xl:p-5">
-            <div class="flex justify-between bg-transparent" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-                <p class="font-syne font-bold text-sm text-dark-surface
+            <button class="flex justify-between bg-transparent" id="accordion-collapse-heading-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                <p class="text-left font-syne font-bold text-sm text-dark-surface
                 md:text-base">What security compliance frameworks are audited?</p>
-                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
 
-            </div>
+            </button>
             <p class="font-geist text-xs text-secondary hidden
             md:text-sm" id="accordion-collapse-body-3" aria-labelledby="accordion-collapse-heading-3">AuraFlow utilizes micro-runtime snap-starts pre-warmed on edge pops. Workloads launch instantly without waiting for node boot-ups, ensuring flat performance curve regardless of traffic volume.</p>
         </article>
         <article class="bg-gray-100 flex flex-col gap-2 p-3 rounded-lg
         md:p-4
         xl:gap-3 xl:p-5">
-            <div class="flex justify-between bg-transparent" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
-                <p class="font-syne font-bold text-sm text-dark-surface
+            <button class="flex justify-between bg-transparent" id="accordion-collapse-heading-4" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                <p class="text-left font-syne font-bold text-sm text-dark-surface
                 md:text-base">How is cross-region database replication handled?</p>
-                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
 
-            </div>
+            </button>
             <p class="font-geist text-xs text-secondary hidden
             md:text-sm" id="accordion-collapse-body-4" aria-labelledby="accordion-collapse-heading-4">AuraFlow utilizes micro-runtime snap-starts pre-warmed on edge pops. Workloads launch instantly without waiting for node boot-ups, ensuring flat performance curve regardless of traffic volume.</p>
         </article>
         <article class="bg-gray-100 flex flex-col gap-2 p-3 rounded-lg
         md:p-4
         xl:gap-3 xl:p-5">
-            <div class="flex justify-between bg-transparent" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
-                <p class="font-syne font-bold text-sm text-dark-surface
+            <button class="flex justify-between bg-transparent" id="accordion-collapse-heading-5" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                <p class="text-left font-syne font-bold text-sm text-dark-surface
                 md:text-base">Is there a custom SLA guarantee for Enterprise clients?</p>
-                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+                      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
 
-            </div>
+            </button>
             <p class="font-geist text-xs text-secondary hidden
             md:text-sm" id="accordion-collapse-body-5" aria-labelledby="accordion-collapse-heading-5">AuraFlow utilizes micro-runtime snap-starts pre-warmed on edge pops. Workloads launch instantly without waiting for node boot-ups, ensuring flat performance curve regardless of traffic volume.</p>
         </article>
